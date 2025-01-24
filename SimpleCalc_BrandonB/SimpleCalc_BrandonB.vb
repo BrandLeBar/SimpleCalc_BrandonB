@@ -28,7 +28,7 @@ Module SimpleCalc_BrandonB
 
         Console.WriteLine("Choose a operation to perform" _
                           & vbNewLine & "1. Add" _
-                          & vbNewLine & "2. Subtract")
+                          & vbNewLine & "2. Multiply")
         Operation = Console.ReadLine()
 
         If Operation = "1" Then
@@ -36,9 +36,9 @@ Module SimpleCalc_BrandonB
             Console.WriteLine()
             Console.WriteLine($"{Value1} + {Value2} = " & Value1 + Value2)
         ElseIf Operation = "2" Then
-            Console.WriteLine("You chose: Subtraction")
+            Console.WriteLine("You chose: Multipliation")
             Console.WriteLine()
-            Console.WriteLine($"{Value1} - {Value2} = " & Value1 - Value2)
+            Console.WriteLine($"{Value1} * {Value2} = " & Value1 * Value2)
         Else Console.WriteLine("Wrong! Try again.")
 
         End If
